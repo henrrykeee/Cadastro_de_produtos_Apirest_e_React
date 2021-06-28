@@ -1,17 +1,19 @@
-import React, {Component} from 'react';
-import ProductBox from './components/Product/index';
-import Header from './components/Header'
+import React, { Component } from 'react';
+
+import Header from './components/Header';
+
+import ProductBox from './components/Product';
 
 class App extends Component {
-  render(){
+  render() {
     return (
-      <div className ="container">
-        <ProductBox/>
-
+      <div className="container">
+        <Header title="Cadastro de produtos em Banco" />
+        <br />
+        <ProductBox />
       </div>
     );
   }
 }
 
 export default App;
-
